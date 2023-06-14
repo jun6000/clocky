@@ -12,12 +12,14 @@ export default function AnalogClock({ time }) {
     };
 
     return (
-        <div className="frameOuter">
-            <div className="frameInner">
-                <div className="twelve">12</div>
-                <div className="hourNeedle" style={{ transform: `rotate(${hours * 30 + minutes * 0.5}deg)`}}></div>
-                <div className="minuteNeedle" style={{ transform: `rotate(${(minutes + seconds / 60) * 6}deg)`}}></div>
-                <div className="secondNeedle" style={secondsStyle}></div>
+        <div className="analogClockWrapper">
+            <div className="frameOuter">
+                <div className="frameInner">
+                    <div className="twelve">12</div>
+                    <div className="hourNeedle" style={{ transform: `rotate(${hours * 30 + minutes * 0.5}deg)`}}></div>
+                    <div className="minuteNeedle" style={{ transform: `rotate(${(minutes + seconds / 60) * 6}deg)`}}></div>
+                    <div className="secondNeedle" style={secondsStyle}></div>
+                </div>
             </div>
         </div>
     );
