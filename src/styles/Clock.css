@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url("../assets/Orbitron-VariableFont_wght.ttf");
+    font-weight: 400 900;
+}
+
+html, body, #root {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.digitalTime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Orbitron", monospace;
+    font-size: 5rem;
+    font-weight: 400;
+}

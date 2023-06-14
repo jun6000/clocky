@@ -1,0 +1,76 @@
+.frameOuter {
+    margin: 2rem;
+    background-color: rgb(118, 166, 190);
+    height: 45rem;
+    width: 45rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frameInner {
+    position: relative;
+    margin: 1rem;
+    background-color: rgb(94, 91, 86);
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+}
+
+.twelve {
+    position: absolute;
+    width: 5rem;
+    left: 17.5rem;
+    z-index: 0;
+    font-family: "Orbitron";
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.hourNeedle {
+    position: absolute;
+    top: 11.25rem;
+    left: 18.75rem;
+    border-radius: 1.5rem;
+    background-color: rgb(57, 56, 134);
+    width: 2.5rem;
+    height: 10rem;
+    transform-origin: 50% calc(8.75 / 10 * 100%);
+    z-index: 0;
+}
+
+.minuteNeedle {
+    position: absolute;
+    top: 5.75rem; 
+    left: 19.25rem;
+    border-radius: 1rem;
+    background-color: rgb(80, 175, 175);
+    width: 1.5rem;
+    height: 15rem;
+    transform-origin: 50% calc(14.25 / 15 * 100%);
+    z-index: 1;
+}
+
+.secondNeedle {
+    position: absolute;
+    top: 2.25rem;
+    left: 19.75rem;
+    border-radius: 1rem;
+    background-color: rgb(6, 36, 75);
+    width: .5rem;
+    height: 18rem;
+    transform-origin: 50% calc(17.75 / 18 * 100%);
+    transition: 500ms ease all;
+    z-index: 2;
+}
+
+@keyframes lastSecond {
+    from {
+        transform: rotate(354deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
