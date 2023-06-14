@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import "./styles/Clock.css"
-import AnalogClock from "./components/AnalogClock"
+import "../styles/Clock.css"
+import AnalogClock from "./AnalogClock"
 
 export default function Clock() {
     const [time, setTime] = useState(new Date().toLocaleTimeString());
