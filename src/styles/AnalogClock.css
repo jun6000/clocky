@@ -1,67 +1,71 @@
-.frameOuter {
-    margin: 2rem;
-    background-color: rgb(118, 166, 190);
-    height: 45rem;
-    width: 45rem;
-    border-radius: 50%;
+.analogClockWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.frameInner {
+.frameOuter {
     position: relative;
-    margin: 1rem;
+    background-color: rgb(118, 166, 190);
+    height: 67.5vh;
+    width: 67.5vh;
+    border-radius: 50%;
+}
+
+.frameInner {
+    position: absolute;
+    left: 3.75vh;
+    top: 3.75vh;
     background-color: rgb(94, 91, 86);
-    height: 40rem;
-    width: 40rem;
+    height: 60vh;
+    width: 60vh;
     border-radius: 50%;
 }
 
 .twelve {
     position: absolute;
-    width: 5rem;
-    left: 17.5rem;
+    width: 7.5vh;
+    left: 26.25vh;
     z-index: 0;
     font-family: "Orbitron";
-    font-size: 4rem;
+    font-size: 6vh;
     color: white;
     text-align: center;
 }
 
 .hourNeedle {
     position: absolute;
-    top: 11.25rem;
-    left: 18.75rem;
-    border-radius: 1.5rem;
+    top: 16.875vh;
+    left: 28.125vh;
+    border-radius: 2.25vh;
     background-color: rgb(57, 56, 134);
-    width: 2.5rem;
-    height: 10rem;
-    transform-origin: 50% calc(8.75 / 10 * 100%);
+    width: 3.75vh;
+    height: 15vh;
+    transform-origin: 50% calc(13.125 / 15 * 100%);
     z-index: 0;
 }
 
 .minuteNeedle {
     position: absolute;
-    top: 5.75rem; 
-    left: 19.25rem;
-    border-radius: 1rem;
+    top: 8.625vh; 
+    left: 28.875vh;
+    border-radius: 1.5vh;
     background-color: rgb(80, 175, 175);
-    width: 1.5rem;
-    height: 15rem;
-    transform-origin: 50% calc(14.25 / 15 * 100%);
+    width: 2.25vh;
+    height: 22.5vh;
+    transform-origin: 50% calc(21.375 / 22.5 * 100%);
     z-index: 1;
 }
 
 .secondNeedle {
     position: absolute;
-    top: 2.25rem;
-    left: 19.75rem;
-    border-radius: 1rem;
+    top: 3.375vh;
+    left: 29.625vh;
+    border-radius: 1.5vh;
     background-color: rgb(6, 36, 75);
-    width: .5rem;
-    height: 18rem;
-    transform-origin: 50% calc(17.75 / 18 * 100%);
+    width: 0.75vh;
+    height: 27vh;
+    transform-origin: 50% calc(26.625 / 27 * 100%);
     transition: 500ms ease all;
     z-index: 2;
 }

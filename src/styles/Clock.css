@@ -7,24 +7,27 @@
 html, body, #root {
     background-color: grey;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
     display: flex;
     flex-basis: auto;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content:flex-start;
     height: 100%;
-    width: 100%;
 }
 
 .digitalTime {
+    padding: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Orbitron", monospace;
-    font-size: 5rem;
+    font-size: 10vh;
     font-weight: 400;
+    white-space: nowrap;
 }
