@@ -1,4 +1,4 @@
-.analogClockWrapper {
+/* .analogClockWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,4 +77,85 @@
     to {
         transform: rotate(360deg);
     }
+} */
+
+.analogClockWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameOuter {
+  position: relative;
+  background-color: rgb(118, 166, 190);
+  height: 54vh;
+  width: 54vh;
+  border-radius: 50%;
+}
+
+.frameInner {
+  position: absolute;
+  left: 3vh;
+  top: 3vh;
+  background-color: rgb(94, 91, 86);
+  height: 48vh;
+  width: 48vh;
+  border-radius: 50%;
+}
+
+.twelve {
+  position: absolute;
+  width: 6vh;
+  left: 21vh;
+  z-index: 0;
+  font-family: "Orbitron";
+  font-size: 4.8vh;
+  color: white;
+  text-align: center;
+}
+
+.hourNeedle {
+  position: absolute;
+  top: 13.5vh;
+  left: 22.5vh;
+  border-radius: 1.8vh;
+  background-color: rgb(57, 56, 134);
+  width: 3vh;
+  height: 12vh;
+  transform-origin: 50% calc(10.5 / 12 * 100%);
+  z-index: 0;
+}
+
+.minuteNeedle {
+  position: absolute;
+  top: 6.9vh;
+  left: 23.1vh;
+  border-radius: 1.2vh;
+  background-color: rgb(80, 175, 175);
+  width: 1.8vh;
+  height: 18vh;
+  transform-origin: 50% calc(16.875 / 18 * 100%);
+  z-index: 1;
+}
+
+.secondNeedle {
+  position: absolute;
+  top: 2.7vh;
+  left: 23.7vh;
+  border-radius: 1.2vh;
+  background-color: rgb(6, 36, 75);
+  width: 0.6vh;
+  height: 21.6vh;
+  transform-origin: 50% calc(21.3 / 21.6 * 100%);
+  transition: 500ms ease all;
+  z-index: 2;
+}
+
+@keyframes lastSecond {
+  from {
+    transform: rotate(354deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

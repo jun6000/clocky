@@ -17,17 +17,17 @@ html, body, #root {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: center;
     height: 100%;
 }
 
 .digitalTime {
-    padding: 5vh;
+    padding: 4vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Orbitron", monospace;
-    font-size: 10vh;
+    font-size: 8vh;
     font-weight: 400;
     white-space: nowrap;
 }
